@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: //const HomeScreen(),
+          // 깃 테스트
           const NotificationScrren(),
     );
   }
@@ -45,6 +46,7 @@ class NotificationScrren extends StatefulWidget {
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   print(
       'background title : ${message.notification?.title}, message : ${message.notification?.body}');
+  print('q1w');
 }
 
 class _NotificationScrrenState extends State<NotificationScrren> {
