@@ -46,7 +46,6 @@ class NotificationScrren extends StatefulWidget {
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   print(
       'background title : ${message.notification?.title}, message : ${message.notification?.body}');
-  print('q1w');
 }
 
 class _NotificationScrrenState extends State<NotificationScrren> {
